@@ -1,0 +1,24 @@
+{
+  "name": "consultorio-backend",
+  "version": "0.1.0",
+  "description": "API del prototipo de gestión de citas e historias clínicas",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "crear-bd": "node scripts/crearBD.js",
+    "respaldo": "node scripts/respaldo.js crear",
+    "restaurar": "node scripts/respaldo.js restaurar",
+    "test": "node --test test/api.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.14",
+    "pg": "^8.12.0"
+  }
+}
